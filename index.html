@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<div id ="main">
+  <h1 id="result">&nbsp;</h1>
+
+  <canvas id="board" width="180" height="180"></canvas>
+
+  <h4>Results</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>X</th>
+        <th>O</th>
+        <th>Tie</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td id="x_score">&nbsp;</td>
+      <td id="o_score">&nbsp;</td>
+      <td id="tie_score"&nbsp;></td>
+    </tr>
+    <tr>
+      <td id="x_percent">&nbsp;</td>
+      <td id="o_percent">&nbsp;</td>
+      <td id="tie_percent">&nbsp;</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <fieldset>
+    <input type="radio" name="mode" value="pvc" checked>PvC
+    <input type="radio" name="mode" value="cvc">CvC<br>
+    <button id="cmd" action="">&mdash;</button>
+  </fieldset>
+</div>
+
+<script language="JavaScript" type="text/javascript" src="assets/extlib/eventemiiter.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="client.js"></script>
+</body>
+</html>
+
